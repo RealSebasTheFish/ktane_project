@@ -1,0 +1,661 @@
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "shortsim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of E:\ORCAD\workspace\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source KTANE_PROJECT
+V_V1         N01253 0 5Vdc
+X_dataLine1_U2         N01253 dataLine1_N00366 Sw_tClose PARAMS: tClose=0.002
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_dataLine1_U1         dataLine1_N00366 N01721 Sw_tOpen PARAMS: tOpen={0.002 +
++  0.001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine1_U2         N01253 outputLine1_N00366 Sw_tClose PARAMS:
++  tClose=0.001 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine1_U1         outputLine1_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.001 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R2         N04755 0  5k TC=0,0 
+R_R3         N01721 0  10k TC=0,0 
+X_inputLine1_U2         N01253 inputLine1_N00366 Sw_tClose PARAMS:
++  tClose=0.0025 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine1_U1         inputLine1_N00366 N06214 Sw_tOpen PARAMS: tOpen={0.0025
++  + 0.001} ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R4         0 N06214  5k TC=0,0 
+R_R5         0 N03496  1k TC=0,0 
+R_R6         0 N06911  1k TC=0,0 
+R_R7         0 N06918  1k TC=0,0 
+R_R8         0 N06925  1k TC=0,0 
+R_R9         0 N06932  1k TC=0,0 
+R_R10         0 N06939  1k TC=0,0 
+R_R11         0 N06946  1k TC=0,0 
+R_R12         0 N06953  1k TC=0,0 
+X_clear_U2         N08194 clear_N00366 Sw_tClose PARAMS: tClose=0.0005 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_clear_U1         clear_N00366 0 Sw_tOpen PARAMS: tOpen={0.0005 + 0.0005}
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R13         N01253 N08194  1k TC=0,0 
+X_U2         0 N06214 N04755 N08194 N01721 N03496 N06953 N06946 N06939 N06932
++  N06925 N06918 N06911 M_UN0001 N01253 0 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_outputLine2_U1         outputLine2_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.004 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine2_U2         N01253 outputLine2_N00366 Sw_tClose PARAMS:
++  tClose=0.004 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine2_U1         inputLine2_N00366 N06214 Sw_tOpen PARAMS: tOpen={0.005
++  + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine2_U2         N01253 inputLine2_N00366 Sw_tClose PARAMS: tClose=0.005
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine3_U1         outputLine3_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.006 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine3_U2         N01253 outputLine3_N00366 Sw_tClose PARAMS:
++  tClose=0.006 ttran=1u Rclosed=0.01 Ropen=1Meg
+V_V2         N16117 0 DC 0 AC 0
++PULSE 0 5 0 10n 10n 5u 10u
+R_R14         0 N16117  1k TC=0,0 
+
+**** RESUMING shortsim.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_U2.U1:IN4 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ N01253
++ 0
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N04755
+*
+* Moving X_U2.U1:IN2 from analog node N04755 to new digital node N04755$AtoD
+X$N04755_AtoD1
++ N04755
++ N04755$AtoD
++ N01253
++ 0
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N01721
+*
+* Moving X_U2.U1:IN5 from analog node N01721 to new digital node N01721$AtoD
+X$N01721_AtoD1
++ N01721
++ N01721$AtoD
++ N01253
++ 0
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N06214
+*
+* Moving X_U2.U1:IN1 from analog node N06214 to new digital node N06214$AtoD
+X$N06214_AtoD1
++ N06214
++ N06214$AtoD
++ N01253
++ 0
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N03496
+*
+* Moving X_U2.UHC595DLY:OUT1 from analog node N03496 to new digital node N03496$DtoA
+X$N03496_DtoA1
++ N03496$DtoA
++ N03496
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06911
+*
+* Moving X_U2.UHC595DLY:OUT8 from analog node N06911 to new digital node N06911$DtoA
+X$N06911_DtoA1
++ N06911$DtoA
++ N06911
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06918
+*
+* Moving X_U2.UHC595DLY:OUT7 from analog node N06918 to new digital node N06918$DtoA
+X$N06918_DtoA1
++ N06918$DtoA
++ N06918
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06925
+*
+* Moving X_U2.UHC595DLY:OUT6 from analog node N06925 to new digital node N06925$DtoA
+X$N06925_DtoA1
++ N06925$DtoA
++ N06925
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06932
+*
+* Moving X_U2.UHC595DLY:OUT5 from analog node N06932 to new digital node N06932$DtoA
+X$N06932_DtoA1
++ N06932$DtoA
++ N06932
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06939
+*
+* Moving X_U2.UHC595DLY:OUT4 from analog node N06939 to new digital node N06939$DtoA
+X$N06939_DtoA1
++ N06939$DtoA
++ N06939
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06946
+*
+* Moving X_U2.UHC595DLY:OUT3 from analog node N06946 to new digital node N06946$DtoA
+X$N06946_DtoA1
++ N06946$DtoA
++ N06946
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N06953
+*
+* Moving X_U2.UHC595DLY:OUT2 from analog node N06953 to new digital node N06953$DtoA
+X$N06953_DtoA1
++ N06953$DtoA
++ N06953
++ N01253
++ 0
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N08194
+*
+* Moving X_U2.U1:IN3 from analog node N08194 to new digital node N08194$AtoD
+X$N08194_AtoD1
++ N08194
++ N08194$AtoD
++ N01253
++ 0
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_dataLine1_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_dataLine1_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_outputLine1_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_outputLine1_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_inputLine1_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_inputLine1_U1.Smod            X_clear_U2.Smod X_clear_U1.Smod 
+         RON     .01                             .01             .01         
+        ROFF    1.000000E+06                    1.000000E+06    1.000000E+06 
+         VON    1                               1               1            
+        VOFF    0                               0               0            
+
+
+               X_outputLine2_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_outputLine2_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_inputLine2_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_inputLine2_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_outputLine3_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_outputLine3_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74HC         
+      S0NAME 0               
+       S0TSW    5.000000E-09 
+       S0RLO    1            
+       S0RHI  100.000000E+03 
+      S1NAME 1               
+       S1TSW    5.000000E-09 
+       S1RLO  100.000000E+03 
+       S1RHI    1            
+      S2NAME X               
+       S2TSW    5.000000E-09 
+       S2RLO  110            
+       S2RHI  100            
+      S3NAME R               
+       S3TSW    5.000000E-09 
+       S3RLO  110            
+       S3RHI  100            
+      S4NAME F               
+       S4TSW    5.000000E-09 
+       S4RLO  110            
+       S4RHI  100            
+      S5NAME Z               
+       S5TSW    5.000000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74HC          
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .7          
+       S0VLO     .2          
+      S1NAME 0               
+       S1VHI     .2          
+       S1VLO    -.3          
+      S2NAME R               
+       S2VHI     .55         
+       S2VLO     .2          
+      S3NAME R               
+       S3VHI     .7          
+       S3VLO     .45         
+      S4NAME X               
+       S4VHI     .7          
+       S4VLO     .2          
+      S5NAME 1               
+       S5VHI    1.3          
+       S5VLO     .7          
+      S6NAME F               
+       S6VHI     .7          
+       S6VLO     .45         
+      S7NAME F               
+       S7VHI     .55         
+       S7VLO     .2          
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         
+      TPLHMN    0            
+      TPLHTY    0            
+      TPLHMX    0            
+      TPHLMN    0            
+      TPHLTY    0            
+      TPHLMX    0            
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_EFF          
+  TPCLKQLHMN    0            
+  TPCLKQLHTY    0            
+  TPCLKQLHMX    0            
+  TPCLKQHLMN    0            
+  TPCLKQHLTY    0            
+  TPCLKQHLMX    0            
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+    TWCLKLMN    0            
+    TWCLKLTY    0            
+    TWCLKLMX    0            
+    TWCLKHMN    0            
+    TWCLKHTY    0            
+    TWCLKHMX    0            
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+   TSUDCLKMN    0            
+   TSUDCLKTY    0            
+   TSUDCLKMX    0            
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    0            
+    THDCLKTY    0            
+    THDCLKMX    0            
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_HC           IO_HC_DTOA      
+        INLD    3.500000E-12                 
+        DRVL   87                            
+        DRVH   87                            
+       AtoD1 AtoD_HC                         
+       AtoD2 AtoD_HC_NX                      
+       AtoD3 AtoD_HC                         
+       AtoD4 AtoD_HC_NX                      
+       DtoA1 DtoA_HC                         
+       DtoA2 DtoA_HC                         
+       DtoA3 DtoA_HC_E                       
+       DtoA4 DtoA_HC_E                       
+      TSWHL1    2.742000E-09                 
+      TSWHL2    2.742000E-09                 
+      TSWHL3    2.751000E-09                 
+      TSWHL4    2.751000E-09                 
+      TSWLH1    2.758000E-09                 
+      TSWLH2    2.758000E-09                 
+      TSWLH3    2.763000E-09                 
+      TSWLH4    2.763000E-09                 
+       TPWRT    2.000000E-09  100.000000E+03 
+
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01253)    5.0000 (N01721)     .0495 (N03496)    2.3504 (N04755)     .0739     
+
+(N06214)     .0495 (N06911)    2.3504 (N06918)    2.3504 (N06925)    2.3504     
+
+(N06932)    2.3504 (N06939)    2.3504 (N06946)    2.3504 (N06953)    2.3504     
+
+(N08194)    4.9950 (N16117)    0.0000 ($G_DGND)    0.0000                       
+
+($G_DPWR)    5.0000                   (clear_N00366) 49.95E-09                  
+
+(X_clear_U1.3)    1.0000              (X_clear_U2.3)    0.0000                  
+
+(X$0_AtoD1.NORM)    0.0000            (dataLine1_N00366)     .0495              
+
+(X_dataLine1_U1.3)    1.0000          (X_dataLine1_U2.3)    0.0000              
+
+(inputLine1_N00366)     .0495         (inputLine2_N00366)     .0495             
+
+(X_inputLine1_U1.3)    1.0000         (X_inputLine1_U2.3)    0.0000             
+
+(X_inputLine2_U1.3)    1.0000         (X_inputLine2_U2.3)    0.0000             
+
+(outputLine1_N00366)     .0739        (outputLine2_N00366)     .0739            
+
+(outputLine3_N00366)     .0739        (X_outputLine1_U1.3)    1.0000            
+
+(X_outputLine1_U2.3)    0.0000        (X_outputLine2_U1.3)    1.0000            
+
+(X_outputLine2_U2.3)    0.0000        (X_outputLine3_U1.3)    1.0000            
+
+(X_outputLine3_U2.3)    0.0000        (X$N01721_AtoD1.NORM)     .0099           
+
+(X$N04755_AtoD1.NORM)     .0148       (X$N06214_AtoD1.NORM)     .0099           
+
+(X$N08194_AtoD1.NORM)     .9990       (X$N03496_DtoA1.DGND_OL)     .6658        
+
+(X$N03496_DtoA1.DPWR_OH)    4.1168    (X$N06911_DtoA1.DGND_OL)     .6658        
+
+(X$N06911_DtoA1.DPWR_OH)    4.1168    (X$N06918_DtoA1.DGND_OL)     .6658        
+
+(X$N06918_DtoA1.DPWR_OH)    4.1168    (X$N06925_DtoA1.DGND_OL)     .6658        
+
+(X$N06925_DtoA1.DPWR_OH)    4.1168    (X$N06932_DtoA1.DGND_OL)     .6658        
+
+(X$N06932_DtoA1.DPWR_OH)    4.1168    (X$N06939_DtoA1.DGND_OL)     .6658        
+
+(X$N06939_DtoA1.DPWR_OH)    4.1168    (X$N06946_DtoA1.DGND_OL)     .6658        
+
+(X$N06946_DtoA1.DPWR_OH)    4.1168    (X$N06953_DtoA1.DGND_OL)     .6658        
+
+(X$N06953_DtoA1.DPWR_OH)    4.1168    
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(X_U2.Q1E) : 0     ( X_U2.QE) : X     ( X_U2.QF) : X     (N06918$DtoA) : X      
+
+(X_U2.RCK) : 0     ( X_U2.QC) : X     (N06939$DtoA) : X  (N03496$DtoA) : X      
+
+(X_U2.GBAR) : 0    (   $D_HI) : 1     (X_U2.Q1A) : 0     (X_U2.SRCK) : 0        
+
+(X_U2.Q1F) : 0     (X_U2.SRCLRBAR) : 1                   ( X_U2.QG) : X         
+
+(N06953$DtoA) : X  (M_UN0001) : 0     (N08194$AtoD) : 1  (N01721$AtoD) : 0      
+
+(N06911$DtoA) : X  (N04755$AtoD) : 0  (  0$AtoD) : 0     (X_U2.Q1B) : 0         
+
+(   $D_NC) : Z     (X_U2.Q1G) : 0     (X_U2.QHP) : 0     (X_U2.Q1D) : 0         
+
+( X_U2.QD) : X     (N06946$DtoA) : X  (N06932$DtoA) : X  ( X_U2.QA) : X         
+
+(N06214$AtoD) : 0  (X_U2.RCLRBAR) : Z                    ( X_U2.QB) : X         
+
+( X_U2.QH) : X     (X_U2.SER) : 0     (N06925$DtoA) : X  (X_U2.Q1C) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.413E-01
+    V_V2         0.000E+00
+    X_dataLine1_U2.V1   0.000E+00
+    X_dataLine1_U1.V1  -1.000E-12
+    X_outputLine1_U2.V1   0.000E+00
+    X_outputLine1_U1.V1  -1.000E-12
+    X_inputLine1_U2.V1   0.000E+00
+    X_inputLine1_U1.V1  -1.000E-12
+    X_clear_U2.V1   0.000E+00
+    X_clear_U1.V1  -1.000E-12
+    X_outputLine2_U1.V1  -1.000E-12
+    X_outputLine2_U2.V1   0.000E+00
+    X_inputLine2_U1.V1  -1.000E-12
+    X_inputLine2_U2.V1   0.000E+00
+    X_outputLine3_U1.V1  -1.000E-12
+    X_outputLine3_U2.V1   0.000E+00
+    X$DIGIFPWR.VDPWR  -5.000E-06
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   7.07E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/17/25 17:08:15 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-shortsim"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-PSpiceFiles\SCHEMATI
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

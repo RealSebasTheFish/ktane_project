@@ -1,0 +1,50 @@
+* source KTANE_PROJECT
+V_V1         N01253 0 5Vdc
+X_dataLine1_U2         N01253 dataLine1_N00366 Sw_tClose PARAMS: tClose=0.002
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_dataLine1_U1         dataLine1_N00366 N01721 Sw_tOpen PARAMS: tOpen={0.002 +
++  0.001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine1_U2         N01253 outputLine1_N00366 Sw_tClose PARAMS:
++  tClose=0.001 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine1_U1         outputLine1_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.001 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R2         N04755 0  5k TC=0,0 
+R_R3         N01721 0  10k TC=0,0 
+X_inputLine1_U2         N01253 inputLine1_N00366 Sw_tClose PARAMS:
++  tClose=0.0025 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine1_U1         inputLine1_N00366 N06214 Sw_tOpen PARAMS: tOpen={0.0025
++  + 0.001} ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R4         0 N06214  5k TC=0,0 
+R_R5         0 N03496  1k TC=0,0 
+R_R6         0 N06911  1k TC=0,0 
+R_R7         0 N06918  1k TC=0,0 
+R_R8         0 N06925  1k TC=0,0 
+R_R9         0 N06932  1k TC=0,0 
+R_R10         0 N06939  1k TC=0,0 
+R_R11         0 N06946  1k TC=0,0 
+R_R12         0 N06953  1k TC=0,0 
+X_clear_U2         N08194 clear_N00366 Sw_tClose PARAMS: tClose=0.0005 ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+X_clear_U1         clear_N00366 0 Sw_tOpen PARAMS: tOpen={0.0005 + 0.0005}
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R13         N01253 N08194  1k TC=0,0 
+X_U2         0 N06214 N04755 N08194 N01721 N03496 N06953 N06946 N06939 N06932
++  N06925 N06918 N06911 M_UN0001 N01253 0 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_outputLine2_U1         outputLine2_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.004 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine2_U2         N01253 outputLine2_N00366 Sw_tClose PARAMS:
++  tClose=0.004 ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine2_U1         inputLine2_N00366 N06214 Sw_tOpen PARAMS: tOpen={0.005
++  + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_inputLine2_U2         N01253 inputLine2_N00366 Sw_tClose PARAMS: tClose=0.005
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine3_U1         outputLine3_N00366 N04755 Sw_tOpen PARAMS: tOpen=
++ {0.006 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_outputLine3_U2         N01253 outputLine3_N00366 Sw_tClose PARAMS:
++  tClose=0.006 ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R14         0 N16117  1k TC=0,0 
+V_V3         N16117 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\button1.txt"
++  

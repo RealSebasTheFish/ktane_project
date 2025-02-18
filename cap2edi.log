@@ -1,0 +1,29 @@
+
+Copyright (c) 2006-2024, Elgris Technologies, Inc.
+
+OrCAD Capture to EDIF 2 0 0 Schematic Conversion Program SPB 24.10_1.127 built Jul 17 2024
+
+Started on Sun Feb 16 00:38:27 2025
+
+Reading config file e:\orcad\installation\tools\capture\cap2edi.cfg
+
+orcadread :Converting file E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT.DSN 
+Converting SchematicView   SCHEMATIC1 
+	Converting elements on  page PAGE1
+		Converting Parts
+Converting SchematicView   BUTTON 
+	Converting elements on  page BUTTON
+		Converting Parts
+		Converting Ports of Page BUTTON of SchematicView BUTTON
+		Converting Buses and Nets of Schematic View BUTTON 
+		converting Globals of Page PAGE1 of SchematicView SCHEMATIC1
+		Converting Buses and Nets of Schematic View SCHEMATIC1 
+
+Writing EDIF: E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT.EDF
+.............................................................
+
+
+Finished on Sun Feb 16 00:38:27 2025
+
+
+0 errors detected, 0 warnings detected

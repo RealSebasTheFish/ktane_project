@@ -1,0 +1,181 @@
+(ExpressProject "ktane_project"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "24.1 S002 (4270188)  [1/23/2025]-[02/17/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\ktane_project.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Board_sim_option "VHDL_flow"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\ktane_project-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (Sort User)
+    (File ".\KTANE_PROJECT_OUTPUT\BOM.SCH.CSV"
+      (Type "Report")
+      (DisplayName ".\KTANE_PROJECT_OUTPUT\BOM.SCH.CSV"))
+    (File ".\page2-placements.csv"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ktane_project-pspicefiles\schematic1\sim1.sim"
+        (DisplayName "SCHEMATIC1-sim1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ktane_project-pspicefiles\schematic1\shortsim.sim"
+        (DisplayName "SCHEMATIC1-shortsim")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ktane_project-pspicefiles\schematic1\sim1.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (MPSSessionName "sebas")
+  (PartMRUSelector
+    (VPWL_GENERIC
+      (FullPartName "VPWL_GENERIC.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICESOURCEAPP\HYBRID\SUPPORTFILES\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\TCLSCRIPTS\CAPPSPICESOURCEAPP\HYBRID\SUPPORTFILES\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (SUBPARAM
+      (FullPartName "SUBPARAM.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (Sw_tClose
+      (FullPartName "Sw_tClose.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (Sw_tOpen
+      (FullPartName "Sw_tOpen.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-R
+      (LibraryName "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (74HC595
+      (FullPartName "74HC595.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (MHCNEN
+      (FullPartName "MHCNEN.Normal")
+      (LibraryName "C:\USERS\SEBAS\DOWNLOADS\HC\74HC595NEW.OLB")
+      (DeviceIndex "0"))
+    (MHCPEN
+      (FullPartName "MHCPEN.Normal")
+      (LibraryName "C:\USERS\SEBAS\DOWNLOADS\HC\74HC595NEW.OLB")
+      (DeviceIndex "0"))
+    (INV4N
+      (FullPartName "INV4N.Normal")
+      (LibraryName "C:\USERS\SEBAS\DOWNLOADS\HC\74HC595NEW.OLB")
+      (DeviceIndex "0"))
+    (INT
+      (FullPartName "INT.Normal")
+      (LibraryName "C:\USERS\SEBAS\DOWNLOADS\HC\74HC595NEW.OLB")
+      (DeviceIndex "0"))
+    (74HC594
+      (FullPartName "74HC594.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "E:\ORCAD\INSTALLATION\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "E:\ORCAD\installation\tools\capture\library\Custom")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project.dsn")
+      (Path "Design Resources"
+         "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project.dsn"
+         "SCHEMATIC1" "PAGE2"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 747"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1393 24 765")
+        (Scroll "0 76")
+        (Zoom "194")
+        (Occurrence "/"))
+      (Path
+         "E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1393 24 765")
+        (Scroll "265 214")
+        (Zoom "202")
+        (Occurrence "/"))
+      (Path
+         "E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1393 24 765")
+        (Scroll "-193 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "WIRES"))))

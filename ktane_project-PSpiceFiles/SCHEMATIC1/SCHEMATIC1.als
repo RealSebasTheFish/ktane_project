@@ -1,0 +1,69 @@
+.ALIASES
+V_V1            V1(+=N01253 -=0 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS96@SOURCE.VDC.Normal(chips)
+_    dataLine1(IN=N01253 OUT=N01721 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine1@KTANE_PROJECT.BUTTON(sch_1)
+X_dataLine1_U2          dataLine1.U2(1=N01253 2=dataLine1_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine1@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+X_dataLine1_U1          dataLine1.U1(1=dataLine1_N00366 2=N01721 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine1@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+_    _(dataLine1.IN=N01253)
+_    _(dataLine1.OUT=N01721)
+_    outputLine1(IN=N01253 OUT=N04755 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine1@KTANE_PROJECT.BUTTON(sch_1)
+X_outputLine1_U2          outputLine1.U2(1=N01253 2=outputLine1_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine1@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+X_outputLine1_U1          outputLine1.U1(1=outputLine1_N00366 2=N04755 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine1@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+_    _(outputLine1.IN=N01253)
+_    _(outputLine1.OUT=N04755)
+R_R2            R2(1=N04755 2=0 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS5450@ANALOG.R.Normal(chips)
+R_R3            R3(1=N01721 2=0 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS5983@ANALOG.R.Normal(chips)
+_    inputLine1(IN=N01253 OUT=N06214 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine2@KTANE_PROJECT.BUTTON(sch_1)
+X_inputLine1_U2          inputLine1.U2(1=N01253 2=inputLine1_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine2@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+X_inputLine1_U1          inputLine1.U1(1=inputLine1_N00366 2=N06214 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine2@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+_    _(inputLine1.IN=N01253)
+_    _(inputLine1.OUT=N06214)
+R_R4            R4(1=0 2=N06214 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6179@ANALOG.R.Normal(chips)
+R_R5            R5(1=0 2=N03496 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6776@ANALOG.R.Normal(chips)
+R_R6            R6(1=0 2=N06911 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6792@ANALOG.R.Normal(chips)
+R_R7            R7(1=0 2=N06918 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6808@ANALOG.R.Normal(chips)
+R_R8            R8(1=0 2=N06925 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6824@ANALOG.R.Normal(chips)
+R_R9            R9(1=0 2=N06932 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6840@ANALOG.R.Normal(chips)
+R_R10           R10(1=0 2=N06939 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6856@ANALOG.R.Normal(chips)
+R_R11           R11(1=0 2=N06946 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6872@ANALOG.R.Normal(chips)
+R_R12           R12(1=0 2=N06953 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS6888@ANALOG.R.Normal(chips)
+_    clear(IN=N08194 OUT=0 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine2@KTANE_PROJECT.BUTTON(sch_1)
+X_clear_U2          clear.U2(1=N08194 2=clear_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine2@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+X_clear_U1          clear.U1(1=clear_N00366 2=0 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):dataLine2@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+_    _(clear.IN=N08194)
+_    _(clear.OUT=0)
+R_R13           R13(1=N01253 2=N08194 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS11261@ANALOG.R.Normal(chips)
+X_U2            U2(Gbar=0 SRCK=N06214 RCK=N04755 SRCLRbar=N08194 SER=N01721 QA=N03496 QB=N06953 QC=N06946 QD=N06939 QE=N06932
++QF=N06925 QG=N06918 QH=N06911 QHP=M_UN0001 VCC=N01253 GND=0 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):INS11876@KTANE_PROJECT.74HC595_0.Normal(chips)
+_    outputLine2(IN=N01253 OUT=N04755 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine3@KTANE_PROJECT.BUTTON(sch_1)
+X_outputLine2_U1          outputLine2.U1(1=outputLine2_N00366 2=N04755 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine3@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+X_outputLine2_U2          outputLine2.U2(1=N01253 2=outputLine2_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine3@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+_    _(outputLine2.IN=N01253)
+_    _(outputLine2.OUT=N04755)
+_    inputLine2(IN=N01253 OUT=N06214 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine4@KTANE_PROJECT.BUTTON(sch_1)
+X_inputLine2_U1          inputLine2.U1(1=inputLine2_N00366 2=N06214 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine4@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+X_inputLine2_U2          inputLine2.U2(1=N01253 2=inputLine2_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine4@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+_    _(inputLine2.IN=N01253)
+_    _(inputLine2.OUT=N06214)
+_    outputLine3(IN=N01253 OUT=N04755 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine5@KTANE_PROJECT.BUTTON(sch_1)
+X_outputLine3_U1          outputLine3.U1(1=outputLine3_N00366 2=N04755 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine5@KTANE_PROJECT.BUTTON(sch_1):INS342@ANL_MISC.Sw_tOpen.Normal(chips)
+X_outputLine3_U2          outputLine3.U2(1=N01253 2=outputLine3_N00366 ) CN
++@KTANE_PROJECT.SCHEMATIC1(sch_1):outputLine5@KTANE_PROJECT.BUTTON(sch_1):INS370@ANL_MISC.Sw_tClose.Normal(chips)
+_    _(outputLine3.IN=N01253)
+_    _(outputLine3.OUT=N04755)
+R_R14           R14(1=0 2=N16117 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS16882@ANALOG.R.Normal(chips)
+V_V3            V3(+=N16117 -=0 ) CN @KTANE_PROJECT.SCHEMATIC1(sch_1):INS16994@SOURCE.VPWL_GENERIC.Normal(chips)
+.ENDALIASES

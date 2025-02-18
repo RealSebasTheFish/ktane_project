@@ -1,0 +1,7 @@
+STATUS: PSpice Model Import Wizard for "Capture" (24.1.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT00.olb
+   INFO: Symbol Name: 74HC595_0
+  ERROR: Symbol "74HC595_0" not found in symbol library "E:\ORCAD\WORKSPACE\CDSSETUP\WORKSPACE\PROJECTS\KTANE_PROJECT\KTANE_PROJECT00.olb".
+STATUS: 1 Error messages, 0 Warning messages
