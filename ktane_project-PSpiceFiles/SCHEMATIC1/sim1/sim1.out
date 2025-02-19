@@ -1,5 +1,5 @@
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -75,11 +75,286 @@ X_outputLine3_U1         outputLine3_N00366 N04755 Sw_tOpen PARAMS: tOpen=
 + {0.006 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
 X_outputLine3_U2         N01253 outputLine3_N00366 Sw_tClose PARAMS:
 +  tClose=0.006 ttran=1u Rclosed=0.01 Ropen=1Meg
-R_R14         0 N16117  1k TC=0,0 
-V_V3         N16117 0   PWL    
+X_D1         N18360 0 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n         
+V_V4         N18317 0 4.7Vdc
+R_R15         N18317 N18360  100 TC=0,0 
+V_V5         N18963 0 5Vdc
+V_Identification         N18591 0   PWL    
 + FILE
-+  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\button1.txt"
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\identification.txt"
 +  
+V_Signal         In N18595 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\signalin.txt"
++  
+V_Write         In N18599 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\writein.txt"
++  
+X_cutButton1_U1         cutButton1_N00366 N189491 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton1_U2         N18963 cutButton1_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton2_U1         cutButton2_N00366 N190051 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton2_U2         N18963 cutButton2_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton3_U1         cutButton3_N00366 N190431 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton3_U2         N18963 cutButton3_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton4_U1         cutButton4_N00366 N190531 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton4_U2         N18963 cutButton4_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton6_U1         cutButton6_N00366 N191171 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton6_U2         N18963 cutButton6_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton5_U1         cutButton5_N00366 N191071 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton5_U2         N18963 cutButton5_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R16         N189491 N19432  1k TC=0,0 
+R_R17         N190051 N19432  2k TC=0,0 
+R_R18         N190431 N19432  3k TC=0,0 
+R_R19         N190531 N19432  4k TC=0,0 
+R_R20         N191071 N19432  5k TC=0,0 
+R_R21         N191171 N19432  6k TC=0,0 
+X_U3         0 N18599 N18603 N21327 N18595 N197336 N197337 N197338 N197339
++  N1973310 N1973311 N1973312 N1973313 N65276 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4         N20479 N21594 N22258 N21362 N22399 N198436 N198437 N198438 N198439
++  N1984310 N1984311 N1984312 N1984313 N22408 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6         N20479 N21594 N22258 N21362 N22426 N199956 N199957 N199958 N199959
++  N1999510 N1999511 N1999512 N1999513 N22444 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5         N20479 N21594 N22258 N21362 N22408 N199556 N199557 N199558 N199559
++  N1995510 N1995511 N1995512 N1995513 N22426 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U9         N20479 N21594 N22258 N21362 N22480 N203176 N203177 N203178 N203179
++  N2031710 N2031711 N2031712 N2031713 N22498 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8         N20479 N21594 N22258 N21362 N22462 N202776 N202777 N202778 N202779
++  N2027710 N2027711 N2027712 N2027713 N22480 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U7         N20479 N21594 N22258 N21362 N22444 N202376 N202377 N202378 N202379
++  N2023710 N2023711 N2023712 N2023713 N22462 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U10         N20479 N21594 N22258 N21362 N22498 N203576 N203577 N203578
++  N203579 N2035710 N2035711 N2035712 N2035713 M_UN0002 $G_DPWR $G_DGND 74HC595
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R22         N18591 N19432  1k TC=0,0 
+R_R88         N19432 0  1k TC=0,0 
+R_R90         0 N351820  100 TC=0,0 
+X_D3         N197336 N351820 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n    
++      
+R_R91         0 N353870  100 TC=0,0 
+X_D4         N197337 N353870 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n    
++      
+R_R93         0 N355560  100 TC=0,0 
+X_D6         N197339 N355560 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n    
++      
+R_R92         0 N355200  100 TC=0,0 
+X_D5         N197338 N355200 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n    
++      
+X_D8         N1973311 N357870 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D9         N1973312 N358230 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R96         0 N358230  100 TC=0,0 
+X_D10         N1973313 N358590 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R97         0 N358590  100 TC=0,0 
+R_R94         0 N357510  100 TC=0,0 
+X_D7         N1973310 N357510 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R95         0 N357870  100 TC=0,0 
+X_D14         N198439 N362860 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R101         0 N362860  100 TC=0,0 
+X_D16         N1984311 N363580 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R104         0 N363940  100 TC=0,0 
+R_R98         0 N361780  100 TC=0,0 
+R_R99         0 N362140  100 TC=0,0 
+X_D15         N1984310 N363220 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D17         N1984312 N363940 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D13         N198438 N362500 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R103         0 N363580  100 TC=0,0 
+X_D18         N1984313 N364300 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D11         N198436 N361780 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R105         0 N364300  100 TC=0,0 
+X_D12         N198437 N362140 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R102         0 N363220  100 TC=0,0 
+R_R100         0 N362500  100 TC=0,0 
+X_D31         N1999510 N374290 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R119         0 N374650  100 TC=0,0 
+X_D24         N1995511 N371770 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D26         N1995513 N372490 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D27         N199956 N372850 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D20         N199557 N370330 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R106         0 N369970  100 TC=0,0 
+R_R111         0 N371770  100 TC=0,0 
+R_R121         0 N375370  100 TC=0,0 
+R_R107         0 N370330  100 TC=0,0 
+X_D21         N199558 N370690 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D23         N1995510 N371410 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R110         0 N371410  100 TC=0,0 
+X_D29         N199958 N373570 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D28         N199957 N373210 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R108         0 N370690  100 TC=0,0 
+R_R117         0 N373930  100 TC=0,0 
+X_D33         N1999512 N375010 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R115         0 N373210  100 TC=0,0 
+R_R109         0 N371050  100 TC=0,0 
+R_R112         0 N372130  100 TC=0,0 
+X_D34         N1999513 N375370 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D22         N199559 N371050 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R118         0 N374290  100 TC=0,0 
+R_R120         0 N375010  100 TC=0,0 
+X_D30         N199959 N373930 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D32         N1999511 N374650 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D25         N1995512 N372130 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R113         0 N372490  100 TC=0,0 
+R_R116         0 N373570  100 TC=0,0 
+R_R114         0 N372850  100 TC=0,0 
+X_D19         N199556 N369970 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R124         0 N407840  100 TC=0,0 
+X_D57         N2031712 N415040 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R128         0 N409280  100 TC=0,0 
+X_D42         N2023713 N409640 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R139         0 N413240  100 TC=0,0 
+R_R143         0 N414680  100 TC=0,0 
+R_R148         0 N416480  100 TC=0,0 
+X_D45         N202778 N410720 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R149         0 N416840  100 TC=0,0 
+X_D39         N2023710 N408560 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D66         N2035713 N418280 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D50         N2027713 N412520 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D61         N203578 N416480 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D36         N202377 N407480 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D37         N202378 N407840 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D56         N2031711 N414680 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R145         0 N415400  100 TC=0,0 
+R_R131         0 N410360  100 TC=0,0 
+R_R142         0 N414320  100 TC=0,0 
+R_R134         0 N411440  100 TC=0,0 
+R_R153         0 N418280  100 TC=0,0 
+R_R122         0 N407120  100 TC=0,0 
+X_D48         N2027711 N411800 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R135         0 N411800  100 TC=0,0 
+X_D58         N2031713 N415400 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D62         N203579 N416840 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D38         N202379 N408200 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D59         N203576 N415760 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D60         N203577 N416120 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D55         N2031710 N414320 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R133         0 N411080  100 TC=0,0 
+X_D47         N2027710 N411440 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R126         0 N408560  100 TC=0,0 
+X_D63         N2035710 N417200 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D40         N2023711 N408920 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D41         N2023712 N409280 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D51         N203176 N412880 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R125         0 N408200  100 TC=0,0 
+R_R152         0 N417920  100 TC=0,0 
+R_R127         0 N408920  100 TC=0,0 
+R_R140         0 N413600  100 TC=0,0 
+X_D54         N203179 N413960 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D65         N2035712 N417920 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R151         0 N417560  100 TC=0,0 
+R_R129         0 N409640  100 TC=0,0 
+X_D53         N203178 N413600 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R141         0 N413960  100 TC=0,0 
+X_D43         N202776 N410000 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+X_D52         N203177 N413240 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R130         0 N410000  100 TC=0,0 
+X_D46         N202779 N411080 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R144         0 N415040  100 TC=0,0 
+X_D49         N2027712 N412160 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+X_D64         N2035711 N417560 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n  
++        
+R_R138         0 N412880  100 TC=0,0 
+X_D35         N202376 N407120 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R123         0 N407480  100 TC=0,0 
+R_R132         0 N410720  100 TC=0,0 
+R_R150         0 N417200  100 TC=0,0 
+R_R147         0 N416120  100 TC=0,0 
+X_D44         N202777 N410360 LED PARAMS: IS=3.9573e-19 RS=0.5  BV=5 IBV=10n   
++       
+R_R136         0 N412160  100 TC=0,0 
+R_R137         0 N412520  100 TC=0,0 
+R_R146         0 N415760  100 TC=0,0 
+R_R154         N21327 N18963  1k TC=0,0 
+X_Q2         N21327 N42856 0 awbbc547c PARAMS:                                 
++            
+V_V6         N42856 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\clear.txt"
++  
+V_Latch         In N18603 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\latchin.txt"
++  
+R_R155         N18595 0  5k TC=0,0 
+R_R156         N18599 0  5k TC=0,0 
+R_R157         N42856 0  5k TC=0,0 
+R_R158         N18603 0  5k TC=0,0 
 
 **** RESUMING sim1.cir ****
 .END
@@ -90,10 +365,18 @@ V_V3         N16117 0   PWL
 *
 * Analog/Digital interface for node 0
 *
-* Moving X_U2.U1:IN4 from analog node 0 to new digital node 0$AtoD
+* Moving X_U3.U1:IN4 from analog node 0 to new digital node 0$AtoD
 X$0_AtoD1
 + 0
 + 0$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U2.U1:IN4 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
 + N01253
 + 0
 + AtoD_HC
@@ -231,12 +514,969 @@ X$N08194_AtoD1
 + AtoD_HC
 +       PARAMS: CAPACITANCE=   3.5000E-12
 *
+* Analog/Digital interface for node N18595
+*
+* Moving X_U3.U1:IN5 from analog node N18595 to new digital node N18595$AtoD
+X$N18595_AtoD1
++ N18595
++ N18595$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N18599
+*
+* Moving X_U3.U1:IN1 from analog node N18599 to new digital node N18599$AtoD
+X$N18599_AtoD1
++ N18599
++ N18599$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N21327
+*
+* Moving X_U3.U1:IN3 from analog node N21327 to new digital node N21327$AtoD
+X$N21327_AtoD1
++ N21327
++ N21327$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N18603
+*
+* Moving X_U3.U1:IN2 from analog node N18603 to new digital node N18603$AtoD
+X$N18603_AtoD1
++ N18603
++ N18603$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+*
+* Analog/Digital interface for node N197336
+*
+* Moving X_U3.UHC595DLY:OUT1 from analog node N197336 to new digital node N197336$DtoA
+X$N197336_DtoA1
++ N197336$DtoA
++ N197336
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N197337
+*
+* Moving X_U3.UHC595DLY:OUT2 from analog node N197337 to new digital node N197337$DtoA
+X$N197337_DtoA1
++ N197337$DtoA
++ N197337
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N197339
+*
+* Moving X_U3.UHC595DLY:OUT4 from analog node N197339 to new digital node N197339$DtoA
+X$N197339_DtoA1
++ N197339$DtoA
++ N197339
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N197338
+*
+* Moving X_U3.UHC595DLY:OUT3 from analog node N197338 to new digital node N197338$DtoA
+X$N197338_DtoA1
++ N197338$DtoA
++ N197338
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1973311
+*
+* Moving X_U3.UHC595DLY:OUT6 from analog node N1973311 to new digital node N1973311$DtoA
+X$N1973311_DtoA1
++ N1973311$DtoA
++ N1973311
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1973312
+*
+* Moving X_U3.UHC595DLY:OUT7 from analog node N1973312 to new digital node N1973312$DtoA
+X$N1973312_DtoA1
++ N1973312$DtoA
++ N1973312
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1973313
+*
+* Moving X_U3.UHC595DLY:OUT8 from analog node N1973313 to new digital node N1973313$DtoA
+X$N1973313_DtoA1
++ N1973313$DtoA
++ N1973313
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1973310
+*
+* Moving X_U3.UHC595DLY:OUT5 from analog node N1973310 to new digital node N1973310$DtoA
+X$N1973310_DtoA1
++ N1973310$DtoA
++ N1973310
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N198439
+*
+* Moving X_U4.UHC595DLY:OUT4 from analog node N198439 to new digital node N198439$DtoA
+X$N198439_DtoA1
++ N198439$DtoA
++ N198439
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1984311
+*
+* Moving X_U4.UHC595DLY:OUT6 from analog node N1984311 to new digital node N1984311$DtoA
+X$N1984311_DtoA1
++ N1984311$DtoA
++ N1984311
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1984310
+*
+* Moving X_U4.UHC595DLY:OUT5 from analog node N1984310 to new digital node N1984310$DtoA
+X$N1984310_DtoA1
++ N1984310$DtoA
++ N1984310
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1984312
+*
+* Moving X_U4.UHC595DLY:OUT7 from analog node N1984312 to new digital node N1984312$DtoA
+X$N1984312_DtoA1
++ N1984312$DtoA
++ N1984312
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N198438
+*
+* Moving X_U4.UHC595DLY:OUT3 from analog node N198438 to new digital node N198438$DtoA
+X$N198438_DtoA1
++ N198438$DtoA
++ N198438
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1984313
+*
+* Moving X_U4.UHC595DLY:OUT8 from analog node N1984313 to new digital node N1984313$DtoA
+X$N1984313_DtoA1
++ N1984313$DtoA
++ N1984313
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N198436
+*
+* Moving X_U4.UHC595DLY:OUT1 from analog node N198436 to new digital node N198436$DtoA
+X$N198436_DtoA1
++ N198436$DtoA
++ N198436
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N198437
+*
+* Moving X_U4.UHC595DLY:OUT2 from analog node N198437 to new digital node N198437$DtoA
+X$N198437_DtoA1
++ N198437$DtoA
++ N198437
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1999510
+*
+* Moving X_U6.UHC595DLY:OUT5 from analog node N1999510 to new digital node N1999510$DtoA
+X$N1999510_DtoA1
++ N1999510$DtoA
++ N1999510
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1995511
+*
+* Moving X_U5.UHC595DLY:OUT6 from analog node N1995511 to new digital node N1995511$DtoA
+X$N1995511_DtoA1
++ N1995511$DtoA
++ N1995511
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1995513
+*
+* Moving X_U5.UHC595DLY:OUT8 from analog node N1995513 to new digital node N1995513$DtoA
+X$N1995513_DtoA1
++ N1995513$DtoA
++ N1995513
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199956
+*
+* Moving X_U6.UHC595DLY:OUT1 from analog node N199956 to new digital node N199956$DtoA
+X$N199956_DtoA1
++ N199956$DtoA
++ N199956
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199557
+*
+* Moving X_U5.UHC595DLY:OUT2 from analog node N199557 to new digital node N199557$DtoA
+X$N199557_DtoA1
++ N199557$DtoA
++ N199557
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199558
+*
+* Moving X_U5.UHC595DLY:OUT3 from analog node N199558 to new digital node N199558$DtoA
+X$N199558_DtoA1
++ N199558$DtoA
++ N199558
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1995510
+*
+* Moving X_U5.UHC595DLY:OUT5 from analog node N1995510 to new digital node N1995510$DtoA
+X$N1995510_DtoA1
++ N1995510$DtoA
++ N1995510
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199958
+*
+* Moving X_U6.UHC595DLY:OUT3 from analog node N199958 to new digital node N199958$DtoA
+X$N199958_DtoA1
++ N199958$DtoA
++ N199958
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199957
+*
+* Moving X_U6.UHC595DLY:OUT2 from analog node N199957 to new digital node N199957$DtoA
+X$N199957_DtoA1
++ N199957$DtoA
++ N199957
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1999512
+*
+* Moving X_U6.UHC595DLY:OUT7 from analog node N1999512 to new digital node N1999512$DtoA
+X$N1999512_DtoA1
++ N1999512$DtoA
++ N1999512
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1999513
+*
+* Moving X_U6.UHC595DLY:OUT8 from analog node N1999513 to new digital node N1999513$DtoA
+X$N1999513_DtoA1
++ N1999513$DtoA
++ N1999513
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199559
+*
+* Moving X_U5.UHC595DLY:OUT4 from analog node N199559 to new digital node N199559$DtoA
+X$N199559_DtoA1
++ N199559$DtoA
++ N199559
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199959
+*
+* Moving X_U6.UHC595DLY:OUT4 from analog node N199959 to new digital node N199959$DtoA
+X$N199959_DtoA1
++ N199959$DtoA
++ N199959
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1999511
+*
+* Moving X_U6.UHC595DLY:OUT6 from analog node N1999511 to new digital node N1999511$DtoA
+X$N1999511_DtoA1
++ N1999511$DtoA
++ N1999511
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N1995512
+*
+* Moving X_U5.UHC595DLY:OUT7 from analog node N1995512 to new digital node N1995512$DtoA
+X$N1995512_DtoA1
++ N1995512$DtoA
++ N1995512
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N199556
+*
+* Moving X_U5.UHC595DLY:OUT1 from analog node N199556 to new digital node N199556$DtoA
+X$N199556_DtoA1
++ N199556$DtoA
++ N199556
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2031712
+*
+* Moving X_U9.UHC595DLY:OUT7 from analog node N2031712 to new digital node N2031712$DtoA
+X$N2031712_DtoA1
++ N2031712$DtoA
++ N2031712
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2023713
+*
+* Moving X_U7.UHC595DLY:OUT8 from analog node N2023713 to new digital node N2023713$DtoA
+X$N2023713_DtoA1
++ N2023713$DtoA
++ N2023713
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202778
+*
+* Moving X_U8.UHC595DLY:OUT3 from analog node N202778 to new digital node N202778$DtoA
+X$N202778_DtoA1
++ N202778$DtoA
++ N202778
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2023710
+*
+* Moving X_U7.UHC595DLY:OUT5 from analog node N2023710 to new digital node N2023710$DtoA
+X$N2023710_DtoA1
++ N2023710$DtoA
++ N2023710
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2035713
+*
+* Moving X_U10.UHC595DLY:OUT8 from analog node N2035713 to new digital node N2035713$DtoA
+X$N2035713_DtoA1
++ N2035713$DtoA
++ N2035713
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2027713
+*
+* Moving X_U8.UHC595DLY:OUT8 from analog node N2027713 to new digital node N2027713$DtoA
+X$N2027713_DtoA1
++ N2027713$DtoA
++ N2027713
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203578
+*
+* Moving X_U10.UHC595DLY:OUT3 from analog node N203578 to new digital node N203578$DtoA
+X$N203578_DtoA1
++ N203578$DtoA
++ N203578
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202377
+*
+* Moving X_U7.UHC595DLY:OUT2 from analog node N202377 to new digital node N202377$DtoA
+X$N202377_DtoA1
++ N202377$DtoA
++ N202377
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202378
+*
+* Moving X_U7.UHC595DLY:OUT3 from analog node N202378 to new digital node N202378$DtoA
+X$N202378_DtoA1
++ N202378$DtoA
++ N202378
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2031711
+*
+* Moving X_U9.UHC595DLY:OUT6 from analog node N2031711 to new digital node N2031711$DtoA
+X$N2031711_DtoA1
++ N2031711$DtoA
++ N2031711
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2027711
+*
+* Moving X_U8.UHC595DLY:OUT6 from analog node N2027711 to new digital node N2027711$DtoA
+X$N2027711_DtoA1
++ N2027711$DtoA
++ N2027711
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2031713
+*
+* Moving X_U9.UHC595DLY:OUT8 from analog node N2031713 to new digital node N2031713$DtoA
+X$N2031713_DtoA1
++ N2031713$DtoA
++ N2031713
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203579
+*
+* Moving X_U10.UHC595DLY:OUT4 from analog node N203579 to new digital node N203579$DtoA
+X$N203579_DtoA1
++ N203579$DtoA
++ N203579
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202379
+*
+* Moving X_U7.UHC595DLY:OUT4 from analog node N202379 to new digital node N202379$DtoA
+X$N202379_DtoA1
++ N202379$DtoA
++ N202379
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203576
+*
+* Moving X_U10.UHC595DLY:OUT1 from analog node N203576 to new digital node N203576$DtoA
+X$N203576_DtoA1
++ N203576$DtoA
++ N203576
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203577
+*
+* Moving X_U10.UHC595DLY:OUT2 from analog node N203577 to new digital node N203577$DtoA
+X$N203577_DtoA1
++ N203577$DtoA
++ N203577
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2031710
+*
+* Moving X_U9.UHC595DLY:OUT5 from analog node N2031710 to new digital node N2031710$DtoA
+X$N2031710_DtoA1
++ N2031710$DtoA
++ N2031710
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2027710
+*
+* Moving X_U8.UHC595DLY:OUT5 from analog node N2027710 to new digital node N2027710$DtoA
+X$N2027710_DtoA1
++ N2027710$DtoA
++ N2027710
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2035710
+*
+* Moving X_U10.UHC595DLY:OUT5 from analog node N2035710 to new digital node N2035710$DtoA
+X$N2035710_DtoA1
++ N2035710$DtoA
++ N2035710
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2023711
+*
+* Moving X_U7.UHC595DLY:OUT6 from analog node N2023711 to new digital node N2023711$DtoA
+X$N2023711_DtoA1
++ N2023711$DtoA
++ N2023711
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2023712
+*
+* Moving X_U7.UHC595DLY:OUT7 from analog node N2023712 to new digital node N2023712$DtoA
+X$N2023712_DtoA1
++ N2023712$DtoA
++ N2023712
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203176
+*
+* Moving X_U9.UHC595DLY:OUT1 from analog node N203176 to new digital node N203176$DtoA
+X$N203176_DtoA1
++ N203176$DtoA
++ N203176
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203179
+*
+* Moving X_U9.UHC595DLY:OUT4 from analog node N203179 to new digital node N203179$DtoA
+X$N203179_DtoA1
++ N203179$DtoA
++ N203179
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2035712
+*
+* Moving X_U10.UHC595DLY:OUT7 from analog node N2035712 to new digital node N2035712$DtoA
+X$N2035712_DtoA1
++ N2035712$DtoA
++ N2035712
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203178
+*
+* Moving X_U9.UHC595DLY:OUT3 from analog node N203178 to new digital node N203178$DtoA
+X$N203178_DtoA1
++ N203178$DtoA
++ N203178
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202776
+*
+* Moving X_U8.UHC595DLY:OUT1 from analog node N202776 to new digital node N202776$DtoA
+X$N202776_DtoA1
++ N202776$DtoA
++ N202776
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N203177
+*
+* Moving X_U9.UHC595DLY:OUT2 from analog node N203177 to new digital node N203177$DtoA
+X$N203177_DtoA1
++ N203177$DtoA
++ N203177
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202779
+*
+* Moving X_U8.UHC595DLY:OUT4 from analog node N202779 to new digital node N202779$DtoA
+X$N202779_DtoA1
++ N202779$DtoA
++ N202779
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2027712
+*
+* Moving X_U8.UHC595DLY:OUT7 from analog node N2027712 to new digital node N2027712$DtoA
+X$N2027712_DtoA1
++ N2027712$DtoA
++ N2027712
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N2035711
+*
+* Moving X_U10.UHC595DLY:OUT6 from analog node N2035711 to new digital node N2035711$DtoA
+X$N2035711_DtoA1
++ N2035711$DtoA
++ N2035711
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202376
+*
+* Moving X_U7.UHC595DLY:OUT1 from analog node N202376 to new digital node N202376$DtoA
+X$N202376_DtoA1
++ N202376$DtoA
++ N202376
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N202777
+*
+* Moving X_U8.UHC595DLY:OUT2 from analog node N202777 to new digital node N202777$DtoA
+X$N202777_DtoA1
++ N202777$DtoA
++ N202777
++ $G_DPWR
++ $G_DGND
++ DtoA_HC
++       PARAMS: DRVH=  87     DRVL=  87     CAPACITANCE=   0     
+*
 * Analog/Digital interface power supply subcircuits
 *
 X$DIGIFPWR 0 DIGIFPWR
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1.model201   X_D3.model201   X_D4.model201   X_D6.model201   
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D5.model201   X_D8.model201   X_D9.model201   X_D10.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D7.model201   X_D14.model201  X_D16.model201  X_D15.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D17.model201  X_D13.model201  X_D18.model201  X_D11.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D12.model201  X_D31.model201  X_D24.model201  X_D26.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D27.model201  X_D20.model201  X_D21.model201  X_D23.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D29.model201  X_D28.model201  X_D33.model201  X_D34.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D22.model201  X_D30.model201  X_D32.model201  X_D25.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D19.model201  X_D57.model201  X_D42.model201  X_D45.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D39.model201  X_D66.model201  X_D50.model201  X_D61.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D36.model201  X_D37.model201  X_D56.model201  X_D48.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D58.model201  X_D62.model201  X_D38.model201  X_D59.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D60.model201  X_D55.model201  X_D47.model201  X_D63.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D40.model201  X_D41.model201  X_D51.model201  X_D54.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D65.model201  X_D53.model201  X_D43.model201  X_D52.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D46.model201  X_D49.model201  X_D64.model201  X_D35.model201  
+          IS  395.730000E-21  395.730000E-21  395.730000E-21  395.730000E-21 
+           N    2               2               2               2            
+          BV    5               5               5               5            
+         IBV   10.000000E-09   10.000000E-09   10.000000E-09   10.000000E-09 
+          RS     .5              .5              .5              .5          
+
+
+               X_D44.model201  
+          IS  395.730000E-21 
+           N    2            
+          BV    5            
+         IBV   10.000000E-09 
+          RS     .5          
+
+
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q2.model4     
+               NPN             
+       LEVEL    1            
+          IS  345.404600E-15 
+          EG     .802        
+          BF    1.065365E+03 
+          NF    1.138367     
+         VAF    1.000000E+06 
+         IKF     .073222     
+         ISE   39.710490E-15 
+          NE    1.489323     
+          BR     .200108     
+          NR    1.305914     
+         VAR  465.191400E+03 
+         IKR  126.453700E-06 
+         ISC   39.710490E-15 
+          NC    1.411353     
+         ISS    0            
+          RB   10.24944      
+         RBM   10.24944      
+         IRB  389.283300E-06 
+          RE     .203809     
+          RC    1.019047     
+         CJE   12.514000E-12 
+         VJE     .878819     
+         MJE     .636769     
+         CJC    6.161890E-12 
+         VJC     .407818     
+         MJC     .285882     
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+         MJS     .5          
+          FC     .755386     
+          TF  411.694500E-12 
+         XTF   14.26525      
+         VTF   26.99459      
+         ITF    1.080415     
+          TR    8.618000E-09 
+         XTB   28.03136      
+         XTI    0            
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -332,8 +1572,92 @@ X$DIGIFPWR 0 DIGIFPWR
          VON    1            
         VOFF    0            
 
+
+               X_cutButton1_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton1_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton2_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton2_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton3_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton3_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton4_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton4_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton6_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton6_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton5_U1.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
+
+               X_cutButton5_U2.Smod 
+         RON     .01         
+        ROFF    1.000000E+06 
+         VON    1            
+        VOFF    0            
+
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -373,7 +1697,7 @@ X$DIGIFPWR 0 DIGIFPWR
        S5RHI  200.000000E+03 
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -414,7 +1738,7 @@ X$DIGIFPWR 0 DIGIFPWR
        S7VLO     .2          
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -436,7 +1760,7 @@ X$DIGIFPWR 0 DIGIFPWR
       TPHLMX    0            
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -488,7 +1812,7 @@ X$DIGIFPWR 0 DIGIFPWR
    THCECLKMX    0            
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -524,7 +1848,7 @@ X$DIGIFPWR 0 DIGIFPWR
        TPWRT    2.000000E-09  100.000000E+03 
 
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -539,23 +1863,181 @@ X$DIGIFPWR 0 DIGIFPWR
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N01253)    5.0000 (N01721)     .0495 (N03496)    2.3504 (N04755)     .0739     
+(   In) 25.00E-09  (N01253)    5.0000 (N01721)     .0495 (N03496)    2.3504     
 
-(N06214)     .0495 (N06911)    2.3504 (N06918)    2.3504 (N06925)    2.3504     
+(N04755)     .0739 (N06214)     .0495 (N06911)    2.3504 (N06918)    2.3504     
 
-(N06932)    2.3504 (N06939)    2.3504 (N06946)    2.3504 (N06953)    2.3504     
+(N06925)    2.3504 (N06932)    2.3504 (N06939)    2.3504 (N06946)    2.3504     
 
-(N08194)    4.9950 (N16117)    0.0000 ($G_DGND)    0.0000                       
+(N06953)    2.3504 (N08194)    4.9950 (N18317)    4.7000 (N18360)    2.0181     
 
-($G_DPWR)    5.0000                   (clear_N00366) 49.95E-09                  
+(N18591)    0.0000 (N18595) 25.00E-09 (N18599) 25.00E-09 (N18603) 25.00E-09     
 
-(X_clear_U1.3)    1.0000              (X_clear_U2.3)    0.0000                  
+(N18963)    5.0000 (N19432)     .0149 (N21327)    5.0000 (N42856)    0.0000     
 
-(X$0_AtoD1.NORM)    0.0000            (dataLine1_N00366)     .0495              
+($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+
+(N189491)     .0199                   (N190051)     .0249                       
+
+(N190431)     .0298                   (N190531)     .0348                       
+
+(N191071)     .0397                   (N191171)     .0446                       
+
+(N197336)    2.2584                   (N197337)    2.2584                       
+
+(N197338)    2.2584                   (N197339)    2.2584                       
+
+(N198436)    2.2584                   (N198437)    2.2584                       
+
+(N198438)    2.2584                   (N198439)    2.2584                       
+
+(N199556)    2.2584                   (N199557)    2.2584                       
+
+(N199558)    2.2584                   (N199559)    2.2584                       
+
+(N199956)    2.2584                   (N199957)    2.2584                       
+
+(N199958)    2.2584                   (N199959)    2.2584                       
+
+(N202376)    2.2584                   (N202377)    2.2584                       
+
+(N202378)    2.2584                   (N202379)    2.2584                       
+
+(N202776)    2.2584                   (N202777)    2.2584                       
+
+(N202778)    2.2584                   (N202779)    2.2584                       
+
+(N203176)    2.2584                   (N203177)    2.2584                       
+
+(N203178)    2.2584                   (N203179)    2.2584                       
+
+(N203576)    2.2584                   (N203577)    2.2584                       
+
+(N203578)    2.2584                   (N203579)    2.2584                       
+
+(N351820)     .3563                   (N353870)     .3563                       
+
+(N355200)     .3563                   (N355560)     .3563                       
+
+(N357510)     .3563                   (N357870)     .3563                       
+
+(N358230)     .3563                   (N358590)     .3563                       
+
+(N361780)     .3563                   (N362140)     .3563                       
+
+(N362500)     .3563                   (N362860)     .3563                       
+
+(N363220)     .3563                   (N363580)     .3563                       
+
+(N363940)     .3563                   (N364300)     .3563                       
+
+(N369970)     .3563                   (N370330)     .3563                       
+
+(N370690)     .3563                   (N371050)     .3563                       
+
+(N371410)     .3563                   (N371770)     .3563                       
+
+(N372130)     .3563                   (N372490)     .3563                       
+
+(N372850)     .3563                   (N373210)     .3563                       
+
+(N373570)     .3563                   (N373930)     .3563                       
+
+(N374290)     .3563                   (N374650)     .3563                       
+
+(N375010)     .3563                   (N375370)     .3563                       
+
+(N407120)     .3563                   (N407480)     .3563                       
+
+(N407840)     .3563                   (N408200)     .3563                       
+
+(N408560)     .3563                   (N408920)     .3563                       
+
+(N409280)     .3563                   (N409640)     .3563                       
+
+(N410000)     .3563                   (N410360)     .3563                       
+
+(N410720)     .3563                   (N411080)     .3563                       
+
+(N411440)     .3563                   (N411800)     .3563                       
+
+(N412160)     .3563                   (N412520)     .3563                       
+
+(N412880)     .3563                   (N413240)     .3563                       
+
+(N413600)     .3563                   (N413960)     .3563                       
+
+(N414320)     .3563                   (N414680)     .3563                       
+
+(N415040)     .3563                   (N415400)     .3563                       
+
+(N415760)     .3563                   (N416120)     .3563                       
+
+(N416480)     .3563                   (N416840)     .3563                       
+
+(N417200)     .3563                   (N417560)     .3563                       
+
+(N417920)     .3563                   (N418280)     .3563                       
+
+(N1973310)    2.2584                  (N1973311)    2.2584                      
+
+(N1973312)    2.2584                  (N1973313)    2.2584                      
+
+(N1984310)    2.2584                  (N1984311)    2.2584                      
+
+(N1984312)    2.2584                  (N1984313)    2.2584                      
+
+(N1995510)    2.2584                  (N1995511)    2.2584                      
+
+(N1995512)    2.2584                  (N1995513)    2.2584                      
+
+(N1999510)    2.2584                  (N1999511)    2.2584                      
+
+(N1999512)    2.2584                  (N1999513)    2.2584                      
+
+(N2023710)    2.2584                  (N2023711)    2.2584                      
+
+(N2023712)    2.2584                  (N2023713)    2.2584                      
+
+(N2027710)    2.2584                  (N2027711)    2.2584                      
+
+(N2027712)    2.2584                  (N2027713)    2.2584                      
+
+(N2031710)    2.2584                  (N2031711)    2.2584                      
+
+(N2031712)    2.2584                  (N2031713)    2.2584                      
+
+(N2035710)    2.2584                  (N2035711)    2.2584                      
+
+(N2035712)    2.2584                  (N2035713)    2.2584                      
+
+(clear_N00366) 49.95E-09              (X_clear_U1.3)    1.0000                  
+
+(X_clear_U2.3)    0.0000              (X$0_AtoD1.NORM)    0.0000                
+
+(X$0_AtoD2.NORM)    0.0000            (dataLine1_N00366)     .0495              
 
 (X_dataLine1_U1.3)    1.0000          (X_dataLine1_U2.3)    0.0000              
 
+(cutButton1_N00366)     .0199         (cutButton2_N00366)     .0249             
+
+(cutButton3_N00366)     .0298         (cutButton4_N00366)     .0348             
+
+(cutButton5_N00366)     .0397         (cutButton6_N00366)     .0446             
+
 (inputLine1_N00366)     .0495         (inputLine2_N00366)     .0495             
+
+(X_cutButton1_U1.3)    1.0000         (X_cutButton1_U2.3)    0.0000             
+
+(X_cutButton2_U1.3)    1.0000         (X_cutButton2_U2.3)    0.0000             
+
+(X_cutButton3_U1.3)    1.0000         (X_cutButton3_U2.3)    0.0000             
+
+(X_cutButton4_U1.3)    1.0000         (X_cutButton4_U2.3)    0.0000             
+
+(X_cutButton5_U1.3)    1.0000         (X_cutButton5_U2.3)    0.0000             
+
+(X_cutButton6_U1.3)    1.0000         (X_cutButton6_U2.3)    0.0000             
 
 (X_inputLine1_U1.3)    1.0000         (X_inputLine1_U2.3)    0.0000             
 
@@ -573,7 +2055,11 @@ X$DIGIFPWR 0 DIGIFPWR
 
 (X$N04755_AtoD1.NORM)     .0148       (X$N06214_AtoD1.NORM)     .0099           
 
-(X$N08194_AtoD1.NORM)     .9990       (X$N03496_DtoA1.DGND_OL)     .6658        
+(X$N08194_AtoD1.NORM)     .9990       (X$N18595_AtoD1.NORM) 5.000E-09           
+
+(X$N18599_AtoD1.NORM) 5.000E-09       (X$N18603_AtoD1.NORM) 5.000E-09           
+
+(X$N21327_AtoD1.NORM)    1.0000       (X$N03496_DtoA1.DGND_OL)     .6658        
 
 (X$N03496_DtoA1.DPWR_OH)    4.1168    (X$N06911_DtoA1.DGND_OL)     .6658        
 
@@ -589,32 +2075,320 @@ X$DIGIFPWR 0 DIGIFPWR
 
 (X$N06946_DtoA1.DPWR_OH)    4.1168    (X$N06953_DtoA1.DGND_OL)     .6658        
 
-(X$N06953_DtoA1.DPWR_OH)    4.1168    
+(X$N06953_DtoA1.DPWR_OH)    4.1168    (X$N197336_DtoA1.DGND_OL)     .6398       
+
+(X$N197336_DtoA1.DPWR_OH)    4.0861   (X$N197337_DtoA1.DGND_OL)     .6398       
+
+(X$N197337_DtoA1.DPWR_OH)    4.0861   (X$N197338_DtoA1.DGND_OL)     .6398       
+
+(X$N197338_DtoA1.DPWR_OH)    4.0861   (X$N197339_DtoA1.DGND_OL)     .6398       
+
+(X$N197339_DtoA1.DPWR_OH)    4.0861   (X$N198436_DtoA1.DGND_OL)     .6398       
+
+(X$N198436_DtoA1.DPWR_OH)    4.0861   (X$N198437_DtoA1.DGND_OL)     .6398       
+
+(X$N198437_DtoA1.DPWR_OH)    4.0861   (X$N198438_DtoA1.DGND_OL)     .6398       
+
+(X$N198438_DtoA1.DPWR_OH)    4.0861   (X$N198439_DtoA1.DGND_OL)     .6398       
+
+(X$N198439_DtoA1.DPWR_OH)    4.0861   (X$N199556_DtoA1.DGND_OL)     .6398       
+
+(X$N199556_DtoA1.DPWR_OH)    4.0861   (X$N199557_DtoA1.DGND_OL)     .6398       
+
+(X$N199557_DtoA1.DPWR_OH)    4.0861   (X$N199558_DtoA1.DGND_OL)     .6398       
+
+(X$N199558_DtoA1.DPWR_OH)    4.0861   (X$N199559_DtoA1.DGND_OL)     .6398       
+
+(X$N199559_DtoA1.DPWR_OH)    4.0861   (X$N199956_DtoA1.DGND_OL)     .6398       
+
+(X$N199956_DtoA1.DPWR_OH)    4.0861   (X$N199957_DtoA1.DGND_OL)     .6398       
+
+(X$N199957_DtoA1.DPWR_OH)    4.0861   (X$N199958_DtoA1.DGND_OL)     .6398       
+
+(X$N199958_DtoA1.DPWR_OH)    4.0861   (X$N199959_DtoA1.DGND_OL)     .6398       
+
+(X$N199959_DtoA1.DPWR_OH)    4.0861   (X$N202376_DtoA1.DGND_OL)     .6398       
+
+(X$N202376_DtoA1.DPWR_OH)    4.0861   (X$N202377_DtoA1.DGND_OL)     .6398       
+
+(X$N202377_DtoA1.DPWR_OH)    4.0861   (X$N202378_DtoA1.DGND_OL)     .6398       
+
+(X$N202378_DtoA1.DPWR_OH)    4.0861   (X$N202379_DtoA1.DGND_OL)     .6398       
+
+(X$N202379_DtoA1.DPWR_OH)    4.0861   (X$N202776_DtoA1.DGND_OL)     .6398       
+
+(X$N202776_DtoA1.DPWR_OH)    4.0861   (X$N202777_DtoA1.DGND_OL)     .6398       
+
+(X$N202777_DtoA1.DPWR_OH)    4.0861   (X$N202778_DtoA1.DGND_OL)     .6398       
+
+(X$N202778_DtoA1.DPWR_OH)    4.0861   (X$N202779_DtoA1.DGND_OL)     .6398       
+
+(X$N202779_DtoA1.DPWR_OH)    4.0861   (X$N203176_DtoA1.DGND_OL)     .6398       
+
+(X$N203176_DtoA1.DPWR_OH)    4.0861   (X$N203177_DtoA1.DGND_OL)     .6398       
+
+(X$N203177_DtoA1.DPWR_OH)    4.0861   (X$N203178_DtoA1.DGND_OL)     .6398       
+
+(X$N203178_DtoA1.DPWR_OH)    4.0861   (X$N203179_DtoA1.DGND_OL)     .6398       
+
+(X$N203179_DtoA1.DPWR_OH)    4.0861   (X$N203576_DtoA1.DGND_OL)     .6398       
+
+(X$N203576_DtoA1.DPWR_OH)    4.0861   (X$N203577_DtoA1.DGND_OL)     .6398       
+
+(X$N203577_DtoA1.DPWR_OH)    4.0861   (X$N203578_DtoA1.DGND_OL)     .6398       
+
+(X$N203578_DtoA1.DPWR_OH)    4.0861   (X$N203579_DtoA1.DGND_OL)     .6398       
+
+(X$N203579_DtoA1.DPWR_OH)    4.0861   (X$N1973310_DtoA1.DGND_OL)     .6398      
+
+(X$N1973310_DtoA1.DPWR_OH)    4.0861  (X$N1973311_DtoA1.DGND_OL)     .6398      
+
+(X$N1973311_DtoA1.DPWR_OH)    4.0861  (X$N1973312_DtoA1.DGND_OL)     .6398      
+
+(X$N1973312_DtoA1.DPWR_OH)    4.0861  (X$N1973313_DtoA1.DGND_OL)     .6398      
+
+(X$N1973313_DtoA1.DPWR_OH)    4.0861  (X$N1984310_DtoA1.DGND_OL)     .6398      
+
+(X$N1984310_DtoA1.DPWR_OH)    4.0861  (X$N1984311_DtoA1.DGND_OL)     .6398      
+
+(X$N1984311_DtoA1.DPWR_OH)    4.0861  (X$N1984312_DtoA1.DGND_OL)     .6398      
+
+(X$N1984312_DtoA1.DPWR_OH)    4.0861  (X$N1984313_DtoA1.DGND_OL)     .6398      
+
+(X$N1984313_DtoA1.DPWR_OH)    4.0861  (X$N1995510_DtoA1.DGND_OL)     .6398      
+
+(X$N1995510_DtoA1.DPWR_OH)    4.0861  (X$N1995511_DtoA1.DGND_OL)     .6398      
+
+(X$N1995511_DtoA1.DPWR_OH)    4.0861  (X$N1995512_DtoA1.DGND_OL)     .6398      
+
+(X$N1995512_DtoA1.DPWR_OH)    4.0861  (X$N1995513_DtoA1.DGND_OL)     .6398      
+
+(X$N1995513_DtoA1.DPWR_OH)    4.0861  (X$N1999510_DtoA1.DGND_OL)     .6398      
+
+(X$N1999510_DtoA1.DPWR_OH)    4.0861  (X$N1999511_DtoA1.DGND_OL)     .6398      
+
+(X$N1999511_DtoA1.DPWR_OH)    4.0861  (X$N1999512_DtoA1.DGND_OL)     .6398      
+
+(X$N1999512_DtoA1.DPWR_OH)    4.0861  (X$N1999513_DtoA1.DGND_OL)     .6398      
+
+(X$N1999513_DtoA1.DPWR_OH)    4.0861  (X$N2023710_DtoA1.DGND_OL)     .6398      
+
+(X$N2023710_DtoA1.DPWR_OH)    4.0861  (X$N2023711_DtoA1.DGND_OL)     .6398      
+
+(X$N2023711_DtoA1.DPWR_OH)    4.0861  (X$N2023712_DtoA1.DGND_OL)     .6398      
+
+(X$N2023712_DtoA1.DPWR_OH)    4.0861  (X$N2023713_DtoA1.DGND_OL)     .6398      
+
+(X$N2023713_DtoA1.DPWR_OH)    4.0861  (X$N2027710_DtoA1.DGND_OL)     .6398      
+
+(X$N2027710_DtoA1.DPWR_OH)    4.0861  (X$N2027711_DtoA1.DGND_OL)     .6398      
+
+(X$N2027711_DtoA1.DPWR_OH)    4.0861  (X$N2027712_DtoA1.DGND_OL)     .6398      
+
+(X$N2027712_DtoA1.DPWR_OH)    4.0861  (X$N2027713_DtoA1.DGND_OL)     .6398      
+
+(X$N2027713_DtoA1.DPWR_OH)    4.0861  (X$N2031710_DtoA1.DGND_OL)     .6398      
+
+(X$N2031710_DtoA1.DPWR_OH)    4.0861  (X$N2031711_DtoA1.DGND_OL)     .6398      
+
+(X$N2031711_DtoA1.DPWR_OH)    4.0861  (X$N2031712_DtoA1.DGND_OL)     .6398      
+
+(X$N2031712_DtoA1.DPWR_OH)    4.0861  (X$N2031713_DtoA1.DGND_OL)     .6398      
+
+(X$N2031713_DtoA1.DPWR_OH)    4.0861  (X$N2035710_DtoA1.DGND_OL)     .6398      
+
+(X$N2035710_DtoA1.DPWR_OH)    4.0861  (X$N2035711_DtoA1.DGND_OL)     .6398      
+
+(X$N2035711_DtoA1.DPWR_OH)    4.0861  (X$N2035712_DtoA1.DGND_OL)     .6398      
+
+(X$N2035712_DtoA1.DPWR_OH)    4.0861  (X$N2035713_DtoA1.DGND_OL)     .6398      
+
+(X$N2035713_DtoA1.DPWR_OH)    4.0861  
 
 
 
  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
 
 
-(X_U2.Q1E) : 0     ( X_U2.QE) : X     ( X_U2.QF) : X     (N06918$DtoA) : X      
+(X_U10.Q1C) : X    ( X_U9.QA) : X     ( X_U5.QA) : X     (X_U3.Q1G) : 0         
 
-(X_U2.RCK) : 0     ( X_U2.QC) : X     (N06939$DtoA) : X  (N03496$DtoA) : X      
+(X_U2.Q1E) : 0     (  N21362) : Z     (N2027711$DtoA) : X                       
 
-(X_U2.GBAR) : 0    (   $D_HI) : 1     (X_U2.Q1A) : 0     (X_U2.SRCK) : 0        
+(X_U10.RCK) : X    (X_U5.SRCK) : X    ( X_U6.QE) : X     ( X_U2.QE) : X         
 
-(X_U2.Q1F) : 0     (X_U2.SRCLRBAR) : 1                   ( X_U2.QG) : X         
+(N198436$DtoA) : X                    (X_U8.Q1G) : X     (X_U9.Q1E) : X         
 
-(N06953$DtoA) : X  (M_UN0001) : 0     (N08194$AtoD) : 1  (N01721$AtoD) : 0      
+( X_U9.QB) : X     ( X_U5.QB) : X     (N1984311$DtoA) : X                       
 
-(N06911$DtoA) : X  (N04755$AtoD) : 0  (  0$AtoD) : 0     (X_U2.Q1B) : 0         
+(X_U7.RCLRBAR) : Z                    ( X_U6.QF) : X     ( X_U2.QF) : X         
 
-(   $D_NC) : Z     (X_U2.Q1G) : 0     (X_U2.QHP) : 0     (X_U2.Q1D) : 0         
+(X_U8.Q1D) : X     (X_U9.Q1F) : X     (X_U10.RCLRBAR) : Z                       
 
-( X_U2.QD) : X     (N06946$DtoA) : X  (N06932$DtoA) : X  ( X_U2.QA) : X         
+(X_U10.Q1E) : X    (X_U6.GBAR) : X    (N2031712$DtoA) : X                       
 
-(N06214$AtoD) : 0  (X_U2.RCLRBAR) : Z                    ( X_U2.QB) : X         
+(N06918$DtoA) : X  (X_U2.RCK) : 0     (N199558$DtoA) : X                        
 
-( X_U2.QH) : X     (X_U2.SER) : 0     (N06925$DtoA) : X  (X_U2.Q1C) : 0     
+( X_U6.QC) : X     ( X_U2.QC) : X     (N1999510$DtoA) : X                       
+
+(X_U8.Q1A) : X     (X_U9.Q1C) : X     ( X_U9.QH) : X     ( X_U5.QH) : X         
+
+(X_U10.QD) : X     ( X_U7.QG) : X     ( X_U3.QG) : X     (N06939$DtoA) : X      
+
+(X_U9.SRCLRBAR) : X                   (X_U5.Q1D) : X     (X_U6.Q1B) : X         
+
+(X_U4.Q1F) : X     (X_U4.SER) : X     (N2027712$DtoA) : X                       
+
+(N2023713$DtoA) : X                   (X_U6.SRCK) : X    (N03496$DtoA) : X      
+
+(X_U10.QA) : X     (  N22462) : X     (N197337$DtoA) : X                        
+
+(X_U7.Q1E) : X     (X_U5.Q1A) : X     (X_U6.Q1G) : X     (X_U4.Q1C) : X         
+
+(X_U6.QHP) : X     (X_U5.RCLRBAR) : Z                    ( X_U8.QD) : X         
+
+( X_U4.QD) : X     (X_U10.QB) : X     (N199958$DtoA) : X                        
+
+(X_U9.GBAR) : X    (X_U2.GBAR) : 0    (N2035711$DtoA) : X                       
+
+(X_U7.Q1F) : X     (X_U5.Q1B) : X     (X_U6.Q1D) : X     (X_U3.SER) : 0         
+
+(X_U8.QHP) : X     (N1973313$DtoA) : X                   ( X_U8.QA) : X         
+
+( X_U4.QA) : X     (N1995510$DtoA) : X                   (X_U4.RCK) : X         
+
+(X_U10.SRCLRBAR) : X                  (   $D_HI) : 1     ( X_U9.QE) : X         
+
+( X_U5.QE) : X     (X_U3.Q1C) : 0     (X_U2.Q1A) : 0     (X_U3.QHP) : 0         
+
+(X_U7.SRCLRBAR) : X                   (X_U9.RCK) : X     ( X_U8.QB) : X         
+
+( X_U4.QB) : X     (N18603$AtoD) : 0  (X_U2.SRCK) : 0    (N198437$DtoA) : X     
+
+( X_U9.QF) : X     ( X_U5.QF) : X     (X_U3.Q1D) : 0     (X_U2.Q1F) : 0         
+
+(N197338$DtoA) : X                    (X_U2.SRCLRBAR) : 1                       
+
+(  N22426) : X     (N1984312$DtoA) : X                   (X_U8.RCLRBAR) : Z     
+
+(X_U3.RCLRBAR) : Z                    (X_U10.QHP) : X    (N202778$DtoA) : X     
+
+(X_U10.Q1A) : X    ( X_U9.QC) : X     ( X_U5.QC) : X     ( X_U8.QH) : X         
+
+( X_U4.QH) : X     (X_U5.GBAR) : X    (N2031713$DtoA) : X                       
+
+(N2035712$DtoA) : X                   (N18595$AtoD) : 0  ( X_U6.QG) : X         
+
+( X_U2.QG) : X     (N199556$DtoA) : X                    (N199559$DtoA) : X     
+
+(N06953$DtoA) : X  (X_U8.Q1E) : X     (X_U9.Q1G) : X     (N1999511$DtoA) : X    
+
+(  N22480) : X     (X_U10.Q1F) : X    (X_U10.QH) : X     (  N22258) : Z         
+
+(M_UN0001) : 0     (X_U8.Q1B) : X     (N08194$AtoD) : 1  (X_U6.SER) : X         
+
+(X_U3.RCK) : 0     (N2023710$DtoA) : X                   (X_U10.QE) : X         
+
+(N2027713$DtoA) : X                   (N21327$AtoD) : 1  (X_U7.SRCK) : X        
+
+( X_U7.QD) : X     ( X_U3.QD) : X     (N01721$AtoD) : 0  (N202378$DtoA) : X     
+
+(X_U7.Q1A) : X     (X_U5.Q1E) : X     (X_U6.Q1C) : X     (X_U4.Q1G) : X         
+
+(N203576$DtoA) : X                    (N203578$DtoA) : X                        
+
+(X_U8.SER) : X     (X_U6.RCLRBAR) : Z                    (X_U10.QF) : X         
+
+(N202776$DtoA) : X                    ( X_U7.QA) : X     ( X_U3.QA) : X         
+
+(N199956$DtoA) : X                    (N199959$DtoA) : X                        
+
+(X_U8.GBAR) : X    (N06911$DtoA) : X  (X_U7.Q1B) : X     (X_U5.Q1F) : X         
+
+(X_U4.Q1D) : X     (X_U5.SER) : X     ( X_U8.QE) : X     ( X_U4.QE) : X         
+
+(N04755$AtoD) : 0  (X_U6.RCK) : X     (N1973310$DtoA) : X                       
+
+(X_U10.QC) : X     (N1995511$DtoA) : X                   (N1999512$DtoA) : X    
+
+( X_U7.QB) : X     ( X_U3.QB) : X     (  N22444) : X     (X_U7.Q1G) : X         
+
+(X_U5.Q1C) : X     (X_U6.Q1E) : X     (X_U4.Q1A) : X     (X_U5.QHP) : X         
+
+(  0$AtoD) : 0     ( X_U8.QF) : X     ( X_U4.QF) : X     (N203176$DtoA) : X     
+
+(X_U2.Q1B) : 0     (N203178$DtoA) : X                    (X_U8.SRCK) : X        
+
+(X_U3.SRCK) : 0    (N198438$DtoA) : X                    ( X_U8.QC) : X         
+
+( X_U4.QC) : X     (   $D_NC) : Z     (N202376$DtoA) : X                        
+
+(N197339$DtoA) : X                    (X_U5.RCK) : X     ( X_U7.QH) : X         
+
+( X_U3.QH) : X     (N1984313$DtoA) : X                   (X_U4.SRCLRBAR) : X    
+
+(X_U4.RCLRBAR) : Z                    ( X_U9.QG) : X     ( X_U5.QG) : X         
+
+(  N21594) : Z     (X_U3.Q1E) : 0     (X_U2.Q1G) : 0     (N202779$DtoA) : X     
+
+(X_U2.QHP) : 0     (X_U4.GBAR) : X    (N2031710$DtoA) : X                       
+
+(N2035713$DtoA) : X                   (X_U3.SRCLRBAR) : 1                       
+
+(N199557$DtoA) : X                    (X_U10.Q1B) : X    (X_U3.Q1F) : 0         
+
+(X_U2.Q1D) : 0     (N1995512$DtoA) : X                   ( X_U6.QD) : X         
+
+( X_U2.QD) : X     (N06946$DtoA) : X  (X_U8.Q1F) : X     (X_U9.Q1D) : X         
+
+(X_U10.Q1G) : X    (  N22399) : Z     (N06932$DtoA) : X  (N2023711$DtoA) : X    
+
+(  N65276) : 0     (N2027710$DtoA) : X                   (X_U4.SRCK) : X        
+
+(M_UN0002) : X     ( X_U6.QA) : X     ( X_U2.QA) : X     (X_U8.Q1C) : X         
+
+(X_U9.Q1A) : X     (N202379$DtoA) : X                    (X_U10.Q1D) : X        
+
+(N06214$AtoD) : 0  (N203577$DtoA) : X                    (N203579$DtoA) : X     
+
+(N1984310$DtoA) : X                   (  N20479) : Z     (X_U2.RCLRBAR) : Z     
+
+( X_U7.QE) : X     ( X_U3.QE) : X     (N202777$DtoA) : X                        
+
+( X_U6.QB) : X     ( X_U2.QB) : X     (N199957$DtoA) : X                        
+
+(X_U9.Q1B) : X     (X_U7.GBAR) : X    (X_U7.SER) : X     (X_U8.SRCLRBAR) : X    
+
+(  N22408) : X     (  N22498) : X     (X_U10.QG) : X     (N1973311$DtoA) : X    
+
+( X_U7.QF) : X     ( X_U3.QF) : X     (N1999513$DtoA) : X                       
+
+(X_U7.Q1C) : X     (X_U5.Q1G) : X     (X_U6.Q1A) : X     (X_U4.Q1E) : X         
+
+(X_U7.QHP) : X     (X_U9.SER) : X     ( X_U7.QC) : X     ( X_U3.QC) : X         
+
+( X_U6.QH) : X     ( X_U2.QH) : X     (X_U7.Q1D) : X     (X_U6.Q1F) : X         
+
+(X_U4.Q1B) : X     (X_U10.SER) : X    (N2023712$DtoA) : X                       
+
+(X_U2.SER) : 0     (N203177$DtoA) : X                    (N203179$DtoA) : X     
+
+(X_U9.QHP) : X     (X_U9.SRCK) : X    (N198439$DtoA) : X                        
+
+( X_U8.QG) : X     ( X_U4.QG) : X     (X_U7.RCK) : X     (N06925$DtoA) : X      
+
+(N202377$DtoA) : X                    (N197336$DtoA) : X                        
+
+(X_U3.Q1A) : 0     (X_U2.Q1C) : 0     (X_U9.RCLRBAR) : Z                        
+
+(X_U4.QHP) : X     (X_U8.RCK) : X     (X_U6.SRCLRBAR) : X                       
+
+(X_U3.GBAR) : 0    (N2031711$DtoA) : X                   (N2035710$DtoA) : X    
+
+(X_U10.SRCK) : X   (N18599$AtoD) : 0  ( X_U9.QD) : X     ( X_U5.QD) : X         
+
+(X_U3.Q1B) : 0     (N1973312$DtoA) : X                   (N1995513$DtoA) : X    
+
+( 0$AtoD2) : 0     (X_U10.GBAR) : X   (X_U5.SRCLRBAR) : X                   
 
 
 
@@ -623,7 +2397,13 @@ X$DIGIFPWR 0 DIGIFPWR
     NAME         CURRENT
 
     V_V1        -1.413E-01
-    V_V3         0.000E+00
+    V_V4        -2.682E-02
+    V_V5        -2.981E-05
+    V_Identification   1.490E-05
+    V_Signal     0.000E+00
+    V_Write      0.000E+00
+    V_V6         2.675E-11
+    V_Latch      0.000E+00
     X_dataLine1_U2.V1   0.000E+00
     X_dataLine1_U1.V1  -1.000E-12
     X_outputLine1_U2.V1   0.000E+00
@@ -638,16 +2418,28 @@ X$DIGIFPWR 0 DIGIFPWR
     X_inputLine2_U2.V1   0.000E+00
     X_outputLine3_U1.V1  -1.000E-12
     X_outputLine3_U2.V1   0.000E+00
-    X$DIGIFPWR.VDPWR  -5.000E-06
-    X$DIGIFPWR.VDGND  -5.000E-06
+    X_cutButton1_U1.V1  -1.000E-12
+    X_cutButton1_U2.V1   0.000E+00
+    X_cutButton2_U1.V1  -1.000E-12
+    X_cutButton2_U2.V1   0.000E+00
+    X_cutButton3_U1.V1  -1.000E-12
+    X_cutButton3_U2.V1   0.000E+00
+    X_cutButton4_U1.V1  -1.000E-12
+    X_cutButton4_U2.V1   0.000E+00
+    X_cutButton6_U1.V1  -1.000E-12
+    X_cutButton6_U2.V1   0.000E+00
+    X_cutButton5_U1.V1  -1.000E-12
+    X_cutButton5_U2.V1   0.000E+00
+    X$DIGIFPWR.VDPWR  -1.170E+00
+    X$DIGIFPWR.VDGND  -2.280E-01
 
-    TOTAL POWER DISSIPATION   7.07E-01  WATTS
+    TOTAL POWER DISSIPATION   6.68E+00  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 02/17/25 19:47:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 21:19:23 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -659,5 +2451,5 @@ X$DIGIFPWR 0 DIGIFPWR
 
 
 
-  Total job time (using Solver 1)   =         .09
+  Total job time (using Solver 1)   =         .59
 

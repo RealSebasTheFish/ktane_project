@@ -1,6 +1,8 @@
  lib=E:\ORCAD\installation\tools\PSpice\Library\breakout.lib, offset=11099, size=475
  lib=E:\ORCAD\installation\tools\PSpice\Library\breakout.lib, offset=11575, size=433
  lib=E:\ORCAD\installation\tools\PSpice\Library\74hc.lib, offset=184233, size=2731
+ lib=E:\ORCAD\installation\tools\PSpice\Library\PSpiceModelApps.lib, offset=125, size=215
+ lib=E:\ORCAD\installation\tools\PSpice\Library\bjn.lib, offset=620159, size=1721
  lib=E:\ORCAD\installation\tools\PSpice\Library\dig_io.lib, offset=12017, size=116
  lib=E:\ORCAD\installation\tools\PSpice\Library\dig_io.lib, offset=73064, size=437
  lib=E:\ORCAD\installation\tools\PSpice\Library\dig_io.lib, offset=12266, size=116

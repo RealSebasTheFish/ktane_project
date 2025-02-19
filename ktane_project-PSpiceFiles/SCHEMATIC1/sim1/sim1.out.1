@@ -1,5 +1,5 @@
 
-**** 02/17/25 19:46:45 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
+**** 02/18/25 19:21:08 **** PSpice 24.1.0 (23 January 2025) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-sim1"  [ E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\ktane_project-pspicefiles\schematic1\s
 
@@ -75,13 +75,216 @@ X_outputLine3_U1         outputLine3_N00366 N04755 Sw_tOpen PARAMS: tOpen=
 + {0.006 + 0.0005} ttran=1u Rclosed=0.01 Ropen=1Meg
 X_outputLine3_U2         N01253 outputLine3_N00366 Sw_tClose PARAMS:
 +  tClose=0.006 ttran=1u Rclosed=0.01 Ropen=1Meg
-R_R14         0 N16117  1k TC=0,0 
-V_V3         N16117 0   PWL    
+X_D1         N18360 0 LED PARAMS: IS=3.9573e-19 RS=200  BV=5 IBV=10n         
+V_V4         N18317 0 4.7Vdc
+R_R15         N18317 N18360  1k TC=0,0 
+V_V5         N18945 0 3.7Vdc
+V_Identification         N18591 0   PWL    
 + FILE
-+  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\button1.txt"
----$
-ERROR -- Time not monotonically increasing in File "button1.txt" Line 5
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\identification.txt"
 +  
+V_Signal         In N18595 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\signalin.txt"
+---$
+ERROR -- No data in file "signalin.txt"
++  
+V_Write         In N18599 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\writein.txt"
+---$
+ERROR -- No data in file "writein.txt"
++  
+V_Latch         In N18603 0   PWL    
++ FILE
++  "E:\ORCAD\workspace\cdssetup\workspace\projects\ktane_project\signals\wires\latchin.txt"
+---$
+ERROR -- No data in file "latchin.txt"
++  
+X_cutButton1_U1         cutButton1_N00366 N189491 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton1_U2         N18945 cutButton1_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton2_U1         cutButton2_N00366 N190051 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton2_U2         N18945 cutButton2_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton3_U1         cutButton3_N00366 N190431 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton3_U2         N18945 cutButton3_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton4_U1         cutButton4_N00366 N190531 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton4_U2         N18945 cutButton4_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton6_U1         cutButton6_N00366 N191171 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton6_U2         N18945 cutButton6_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton5_U1         cutButton5_N00366 N191071 Sw_tOpen PARAMS: tOpen={1 +
++  0.0001} ttran=1u Rclosed=0.01 Ropen=1Meg
+X_cutButton5_U2         N18945 cutButton5_N00366 Sw_tClose PARAMS: tClose=1
++  ttran=1u Rclosed=0.01 Ropen=1Meg
+R_R16         N189491 N19432  1k TC=0,0 
+R_R17         N190051 N19432  2k TC=0,0 
+R_R18         N190431 N19432  3k TC=0,0 
+R_R19         N190531 N19432  4k TC=0,0 
+R_R20         N191071 N19432  5k TC=0,0 
+R_R21         N191171 N19432  6k TC=0,0 
+X_U3         0 N18599 N18603 N18945 N18595 N197336 N197337 N197338 N197339
++  N1973310 N1973311 N1973312 N1973313 N22390 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4         0 N18599 N18603 N18945 N22390 N198436 N198437 N198438 N198439
++  N1984310 N1984311 N1984312 N1984313 N22408 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6         0 N18599 N18603 N18945 N22426 N199956 N199957 N199958 N199959
++  N1999510 N1999511 N1999512 N1999513 N22444 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5         0 N18599 N18603 N18945 N22408 N199556 N199557 N199558 N199559
++  N1995510 N1995511 N1995512 N1995513 N22426 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U9         0 N18599 N18603 N18945 N22480 N203176 N203177 N203178 N203179
++  N2031710 N2031711 N2031712 N2031713 N22498 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8         0 N18599 N18603 N18945 N22462 N202776 N202777 N202778 N202779
++  N2027710 N2027711 N2027712 N2027713 N22480 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U7         0 N18599 N18603 N18945 N22444 N202376 N202377 N202378 N202379
++  N2023710 N2023711 N2023712 N2023713 N22462 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U10         0 N18599 N18603 N18945 N22498 N203576 N203577 N203578 N203579
++  N2035710 N2035711 N2035712 N2035713 M_UN0002 $G_DPWR $G_DGND 74HC595 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R22         N18591 N19432  1k TC=0,0 
+X_D3         N23344 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R24         N23344 N197338  1k TC=0,0 
+X_D4         N23524 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R25         N23524 N197337  1k TC=0,0 
+R_R26         N23636 N197336  1k TC=0,0 
+X_D5         N23636 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D6         N24042 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D8         N24102 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R29         N24102 N1973311  1k TC=0,0 
+X_D7         N24080 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R28         N24080 N1973310  1k TC=0,0 
+R_R27         N24042 N197339  1k TC=0,0 
+X_D10         N24345 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D9         N24325 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R30         N24325 N1973312  1k TC=0,0 
+R_R31         N24345 N1973313  1k TC=0,0 
+X_D16         N25179 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R37         N25179 N1984311  1k TC=0,0 
+R_R32         N24999 N198436  1k TC=0,0 
+X_D17         N25215 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D14         N25107 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D13         N25071 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D11         N24999 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R33         N25035 N198437  1k TC=0,0 
+X_D15         N25143 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R38         N25215 N1984312  1k TC=0,0 
+R_R34         N25071 N198438  1k TC=0,0 
+R_R35         N25107 N198439  1k TC=0,0 
+X_D18         N25235 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D12         N25035 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R36         N25143 N1984310  1k TC=0,0 
+R_R39         N25235 N1984313  1k TC=0,0 
+R_R44         N25769 N1995510  1k TC=0,0 
+X_D25         N25841 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D19         N25625 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R41         N25661 N199557  1k TC=0,0 
+R_R46         N25841 N1995512  1k TC=0,0 
+R_R43         N25733 N199559  1k TC=0,0 
+X_D21         N25697 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D23         N25769 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R45         N25805 N1995511  1k TC=0,0 
+X_D26         N25861 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D22         N25733 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D20         N25661 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D24         N25805 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R42         N25697 N199558  1k TC=0,0 
+R_R47         N25861 N1995513  1k TC=0,0 
+R_R40         N25625 N199556  1k TC=0,0 
+X_D34         N26503 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R53         N26447 N1999511  1k TC=0,0 
+R_R51         N26375 N199959  1k TC=0,0 
+R_R50         N26339 N199958  1k TC=0,0 
+R_R55         N26503 N1999513  1k TC=0,0 
+X_D30         N26375 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D27         N26267 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R49         N26303 N199957  1k TC=0,0 
+X_D31         N26411 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R54         N26483 N1999512  1k TC=0,0 
+R_R48         N26267 N199956  1k TC=0,0 
+R_R52         N26411 N1999510  1k TC=0,0 
+X_D29         N26339 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D32         N26447 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D28         N26303 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D33         N26483 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R63         N27161 N2023713  1k TC=0,0 
+R_R59         N27033 N202379  1k TC=0,0 
+X_D35         N26925 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R56         N26925 N202376  1k TC=0,0 
+R_R60         N27069 N2023710  1k TC=0,0 
+R_R61         N27105 N2023711  1k TC=0,0 
+R_R62         N27141 N2023712  1k TC=0,0 
+X_D41         N27141 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D39         N27069 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D38         N27033 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D36         N26961 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R57         N26961 N202377  1k TC=0,0 
+R_R58         N26997 N202378  1k TC=0,0 
+X_D42         N27161 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D37         N26997 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D40         N27105 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D44         N27635 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D45         N27671 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D50         N27835 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R66         N27671 N202778  1k TC=0,0 
+R_R69         N27779 N2027711  1k TC=0,0 
+X_D43         N27599 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D49         N27815 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R64         N27599 N202776  1k TC=0,0 
+X_D46         N27707 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R67         N27707 N202779  1k TC=0,0 
+R_R70         N27815 N2027712  1k TC=0,0 
+R_R71         N27835 N2027713  1k TC=0,0 
+R_R65         N27635 N202777  1k TC=0,0 
+X_D47         N27743 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D48         N27779 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R68         N27743 N2027710  1k TC=0,0 
+X_D57         N28505 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R79         N28525 N2031713  1k TC=0,0 
+X_D58         N28525 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D55         N28433 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D53         N28361 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D51         N28289 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R74         N28361 N203178  1k TC=0,0 
+R_R76         N28433 N2031710  1k TC=0,0 
+X_D52         N28325 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R72         N28289 N203176  1k TC=0,0 
+R_R75         N28397 N203179  1k TC=0,0 
+R_R73         N28325 N203177  1k TC=0,0 
+R_R78         N28505 N2031712  1k TC=0,0 
+X_D54         N28397 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D56         N28469 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R77         N28469 N2031711  1k TC=0,0 
+R_R80         N28995 N203576  1k TC=0,0 
+R_R86         N29211 N2035712  1k TC=0,0 
+X_D59         N28995 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R81         N29031 N203577  1k TC=0,0 
+R_R87         N29231 N2035713  1k TC=0,0 
+R_R83         N29103 N203579  1k TC=0,0 
+R_R84         N29139 N2035710  1k TC=0,0 
+X_D66         N29231 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R82         N29067 N203578  1k TC=0,0 
+X_D63         N29139 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R85         N29175 N2035711  1k TC=0,0 
+X_D64         N29175 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D65         N29211 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D60         N29031 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D62         N29103 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+X_D61         N29067 0 LED PARAMS: IS=3.9573e-19 RS=135  BV=5 IBV=10n         
+R_R88         N19432 0  1k TC=0,0 
 
 **** RESUMING sim1.cir ****
 .END
